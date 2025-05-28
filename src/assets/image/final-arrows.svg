@@ -1,0 +1,22 @@
+<svg
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  x="0px"
+  y="0px"
+  width="1221.1px"
+  height="607.9px"
+  viewBox="0 0 1221.1 607.9"
+  enableBackground="new 0 0 1221.1 607.9"
+  xmlSpace="preserve"
+>
+  <style type="text/css">{`
+    .st0 { opacity: 0.5333; fill: #FF0000; }
+  `}</style>
+
+  <polygon className="st0" points="489.8,139.8 553.2,139.8 664.1,304 553.2,468.2 489.8,468.2 600.8,304" />
+  <polygon className="st0" points="368.7,139.8 432,139.8 543,304 432,468.2 368.7,468.2 479.7,304" />
+  <polygon className="st0" points="611,139.8 674.3,139.8 785.3,304 674.3,468.2 611,468.2 721.9,304" />
+  <polygon className="st0" points="732.1,139.8 795.4,139.8 906.4,304 795.4,468.2 732.1,468.2 843.1,304" />
+</svg>

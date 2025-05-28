@@ -1,0 +1,40 @@
+<svg viewBox="0 0 90 13"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <style>
+    .text {
+        font-family: Fredoka;
+        font-size: 10.5px;
+    }
+    .main {
+        font-weight: 500;
+        fill: #f80;
+    }
+    .shadow {
+        font-weight: 500;
+        fill: #bdf;
+        transform: translate(0.3px, 0.5px);
+    }
+    .help {
+        stroke: null;
+        stroke-width: 0.1px;
+    }
+    </style>
+
+    <!-- <rect x="-100" y="-100" width="1000%" height="1000%" fill="#fdd" /> -->
+
+    <defs>
+        <path id="myPath" fill="none" d="M 7 13 C 27 6, 67 6, 87 13" />
+    </defs>
+    <g>
+        <text class="text shadow">
+            <textPath xml:space="preserve" href="#myPath">Congratulations!</textPath>
+        </text>
+        <text class="text main">
+            <textPath xml:space="preserve" href="#myPath">Congratulations!</textPath>
+        </text>
+        <line x1="0" y1="0" x2="100" y2="0" class="help" />
+        <use href="#myPath" class="help" />
+    </g>
+</svg>

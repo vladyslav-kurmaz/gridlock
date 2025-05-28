@@ -1,0 +1,46 @@
+<svg
+  version="1.1"
+  id="Layer_1"
+  xmlns="http://www.w3.org/2000/svg"
+  x="0px"
+  y="0px"
+  width="41.408px"
+  height="178px"
+  viewBox="-18.908 140.778 41.408 178"
+  xmlSpace="preserve"
+>
+  <defs>
+    <pattern
+      id="ziel"
+      patternUnits="userSpaceOnUse"
+      x="-287.5"
+      y="841.445"
+      width="20"
+      height="20"
+      viewBox="0 -20 20 20"
+      overflow="visible"
+    >
+      <g>
+        <polygon fill="none" points="0,0 20,0 20,-20 0,-20" />
+        <polygon points="0,0 10,0 10,-10 0,-10" />
+        <polygon fill="#FFFFFF" points="10,0 20,0 20,-10 10,-10" />
+        <polygon fill="#FFFFFF" points="0,-10 10,-10 10,-20 0,-20" />
+        <polygon points="10,-10 20,-10 20,-20 10,-20" />
+      </g>
+    </pattern>
+
+    <pattern
+      id="SVGID_1_"
+      href="#ziel"
+      patternTransform="matrix(1 0 0 -1 1.5003 -17803.3281)"
+    />
+  </defs>
+
+  <rect
+    x="-8.463"
+    y="155.576"
+    width="19.914"
+    height="149.931"
+    fill="url(#SVGID_1_)"
+  />
+</svg>

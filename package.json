@@ -1,0 +1,54 @@
+{
+  "name": "glidlock",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/react": "^2.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "framer-motion": "^12.9.1",
+    "i18next": "23.2.3",
+    "i18next-browser-languagedetector": "^8.0.5",
+    "i18next-http-backend": "^3.0.2",
+    "jotai": "^2.12.3",
+    "js-priority-queue": "^0.1.5",
+    "next-themes": "^0.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "14.0.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.23.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "svgo": "^3.3.2"
+  }
+}

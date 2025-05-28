@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="660" viewBox="-30 -30 660 660">
+
+    <style>
+        .frame {}
+
+        .background {
+            fill: url(#stonePattern);
+        }
+
+        .a {
+            animation: 12s ease-in-out infinite;
+        }
+    </style>
+    <defs>
+        <pattern id="ziel" x="600" y="190" width="30" height="30" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="15" height="15" fill="black" />
+            <rect x="15" y="0" width="15" height="15" fill="white" />
+            <rect x="0" y="15" width="15" height="15" fill="white" />
+            <rect x="15" y="15" width="15" height="15" fill="black" />
+        </pattern>
+        <path id="s"
+            d="M0 0 l10 0 l7.071 7.071 l20 0 l7.071 7.071 l10 0 l0 10 l-7.071 7.071 l0 10 l-10 0 l-7.071-7.071 l-20 0 l-7.071-7.071 l-10 0 l0-10 l7.071-7.071 z"
+            fill="none" stroke="#aab" stroke-width="1" transform-origin="0 0" />
+        <g id="s2" transform="rotate(-14.6388)">
+            <use href="#s" />
+            <use href="#s" transform="rotate(-90 27.071 7.071) translate(27.071 7.071)" />
+        </g>
+        <pattern id="p" width="111.9173" height="111.9173" viewBox="-13.98966 -13.98966 111.9173 111.9173"
+            patternUnits="userSpaceOnUse">
+            <!-- shows the tile -->
+            <!-- <rect x="-13.98966" y="-13.98966" width="100%" height="100%" stroke="red" fill="none" /> -->
+            <g transform="rotate(0)">
+                <use href="#s2" transform="translate(0 0)" />
+                <use href="#s2" transform="translate(0 111.9173)" />
+                <use href="#s2" transform="translate(27.979733 27.979733)" />
+                <use href="#s2" transform="translate(27.979733 139.896628)" />
+                <use href="#s2" transform="translate(-55.958651 55.958651)" />
+                <use href="#s2" transform="translate(55.958651 55.958651)" />
+                <use href="#s2" transform="translate(83.937977 83.937977)" />
+                <use href="#s2" transform="translate(83.937977 -27.979733)" />
+                <use href="#s2" transform="translate(-27.979733 -27.979733)" />
+                <use href="#s2" transform="translate(-27.979733 83.937977)" />
+            </g>
+        </pattern>
+        <linearGradient id="stoneGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ccc;stop-opacity:1"></stop>
+            <stop offset="100%" style="stop-color:#888;stop-opacity:1"></stop>
+        </linearGradient>
+        <pattern id="stonePattern" patternUnits="userSpaceOnUse" width="50" height="50">
+            <rect x="0" y="0" width="50" height="50" fill="url(#stoneGradient)"></rect>
+            <path d="M5,5 h40 a5,5 0 0,1 5,5 v35 a5,5 0 0,1 -5,5 h-40 a5,5 0 0,1 -5,-5 v-35 a5,5 0 0,1 5,-5 z"
+                fill="url(#stoneGradient)" stroke="#555555" stroke-width="1.5"></path>
+        </pattern>
+        <filter id="stoneTexture" x="0" y="0">
+            <feTurbulence type="fractalNoise" baseFrequency="0.6" result="noise"></feTurbulence>
+            <feDiffuseLighting in="noise" lighting-color="#ddd" surfaceScale="2">
+                <feDistantLight azimuth="45" elevation="60"></feDistantLight>
+            </feDiffuseLighting>
+        </filter>
+        <pattern id="stone" width="1" height="1">
+            <rect x="0" y="0" width="1000" height="1000" fill="url(#stonePattern)" filter="url(#stoneTexture)"></rect>
+        </pattern>
+
+        <g id="car2" transform-origin="50 0" transform="scale(0.9 0.9) translate(0 5)"
+            style="fill-opacity:1;fill-rule:nonzero;stroke-opacity:1;stroke-miterlimit:4;stroke-linecap:butt;stroke-linejoin:miter;stroke:black">
+            <path style="stroke-width:.264583"
+                d="M43.278.5 36.189.455l-2.887.248-1.649.226-1.652.271-1.936.467L26.659 2l-2.07.47-1.936.666-2.005.734-1.67.738-2.206 1.068-1.605.868-1.628 1.153-1.779 1.387-1.471 1.537-1.002 1.404-1.201 1.87-.537 1.202-.534 1.603v137.476L9.64 177.89l.318 1.212.602.916.968 1.229.9.707.992.662 1.04.614 1.037.426 1.372.566 1.324.474 1.31.436 1.382.367 1.228.343 1.56.316 1.533.178 1.395.107h32.75l2.962-.374 3.035-.488 2.706-.7 2.24-.67 2.07-.867 1.215-.725.992-.744 1.02-1.184.65-.903.584-1.07.633-4.693 1.622-12.513.451-4.276V18.245l-.202-1.254-.451-1.441-.54-1.157-.688-1.204-1.037-1.679-.982-1.194-.978-.92-.712-.686-.838-.673-.78-.556-1.074-.697-1.115-.758-1.12-.6-1.21-.577-1.546-.66-1.577-.651-1.52-.584-1.474-.532-1.4-.436-1.487-.419-1.936-.418-2.457-.433L50.294.5Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#585d59;stroke-width:0.7"
+                d="m24.291 61.825-3.315.357-3.674.398-2.538.395-1.31.384-.425.223-.321.206-.26.2-.27.212-.23.258-.277.418-.168.47-.023.615.023 2.032.404 1.276 5.987 14.01.38.79.414.624.886.735.554.237 1.724.024 3.093-.522 3.804-.47 5.432-.402 5.122-.195 7.936-.014 8.587.467 4.358.336 4.803.631.852.169 1.276-.357.52-.47.8-.828.747-1.561.838-1.888 4.748-11.552.308-.804-.024-2.457-.048-.542-.356-.755-.328-.285-.376-.47-.736-.357-1.344-.47-2.833-.498-3.568-.415-4.776-.36-8.22-.3-11.906.035-11.61.172Zm-1.074 77.827-.68.676-.569.851-.694 1.36-.9 2.1-.67 1.973-.616 1.795-.424 1.277-.332 1.18-.376 1.325-.476 2.41-.328 2.502-.144 7.416.072.57.4.59.38.33.636.59.404.168.81.31 1.403.367 1.204.267 1.136.2 1.953.384 1.752.26 1.639.258 1.703.233 1.94.217 1.652.168 1.249.123h15.637l2.542-.106 2.173-.2 1.802-.202 1.889-.284 1.755-.333 1.67-.385 2.004-.436 1.803-.532 1.54-.5.7-.636.4-.367.367-.57-.065-7.883-.301-3.14-.469-2.173-.3-1.3-.634-2.208-.636-1.77-.482-1.452-.452-1.12-.537-1.204-.5-.95-.834-1.521-.602-.7-.582-.22-.948-.024-.848.058-2.634.203-2.385.213-1.915.14-2.009.19-2.432.236-4.276.213-5.812.068-5.477-.305-4.208-.402-1.82-.26-2.549-.258-1.94.028Zm-13.17-63.124 4.836 11.357.377 1.016-.045 19.584-5.271-2.434Zm-.083 32.966 5.262 2.368v21.368l-5.286 3.051Zm66.573-32.966-4.838 11.357-.376 1.016.045 19.584 5.268-2.434Zm.082 32.966-5.262 2.368v21.368l5.286 3.051Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#deffff;stroke-width:.264583"
+                d="m24.705 4.79.544.059.428.157.468.378.264.244.25.466-.018 1.185-.284.535-.95.484-.818.336-.623.35-.746.412-.886.402-.694.401-.756.46-.838.426-.968.6-.863.639-.615.38-.698.519-.602.426-.828.683-.814.652-.708.779c-.26.267-.524.237-2.659.223l-1.47-.028.027-.895.215-.944.236-.567.5-.768.622-.776.555-.59.533-.512.934-.73.862-.65.849-.603.958-.58.896-.519 1.252-.707 1.026-.532.996-.412.817-.34.856-.325 1.248-.426.886-.2.414-.081Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#f4a70d;stroke-width:.264583" d="m12.51 10.906 2.148 4.078"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#f4a70d;stroke-width:.714286;stroke-linecap:round"
+                d="m39.276 59.771-1.474-.078v-1.375c.013-2.698 1.073-6.045 2.677-8.458 1.577-2.335 6.413-7.912 6.646-7.653.194.22 7.46 14.152 7.46 14.295 0 .26-2.301 2.724-2.832 3.035-.387.221-1.409.273-5.74.273-2.897.013-5.935-.013-6.737-.039Zm0 0"
+                transform="matrix(.3021 0 0 .30113 .61 -.366)" />
+            <path style="fill-rule:evenodd;fill:#595959;stroke-width:.401088"
+                d="M29.019 8.068a129.052 129.052 0 0 1 28.473-.175v-3.68a154.716 154.716 0 0 0-28.473 0Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#deffff;stroke-width:.264583"
+                d="m24.706 4.79.543.062.425.158.472.374.263.243.25.467-.017 1.188-.284.532-.951.484-.818.336-.622.35-.746.412-.886.401-.695.402-.756.46-.838.425-.971.604-.863.635-.612.381-.698.519-.602.425-.828.687-.814.648-.708.78c-.263.267-.523.236-2.658.222l-1.471-.027.027-.892.216-.948.232-.566.503-.769.623-.775.55-.59.538-.512.934-.731.858-.649.852-.604.958-.576.896-.522 1.252-.707 1.027-.532.995-.412.814-.34.856-.326 1.252-.425.882-.2.418-.082Zm0 0"
+                transform="matrix(-1.14184 0 0 1.13815 99.538 -.405)" />
+            <path style="fill:#f4a70d;stroke-width:.264583" d="m12.51 10.906 2.148 4.077"
+                transform="matrix(-1.14184 0 0 1.13815 99.538 -.405)" />
+            <path style="fill:#f4a70d;stroke-width:.714286;stroke-linecap:round"
+                d="m39.278 59.77-1.474-.078v-1.375c0-2.698 1.06-6.045 2.676-8.445 1.578-2.348 6.413-7.926 6.646-7.666.194.22 7.46 14.152 7.46 14.295 0 .272-2.314 2.737-2.83 3.035-.389.22-1.41.273-5.742.286-2.896 0-5.935-.026-6.736-.052Zm0 0"
+                transform="matrix(-.3021 0 0 .30113 99.538 -.405)" />
+            <path style="fill:#fff;stroke-width:.265;stroke:#080000"
+                d="m11.6 20.91-.025 37.586-.52-.093-.26-4.678-.095-1.582.024-28.49.236-1.349Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#000;stroke-width:.264583;stroke:#010000"
+                d="m79.332 67.546.944.234 1.3.377 1.396.333 1.676.851 1.06.567.664.968.4.638.192 1.393.068 1.346-.352.803-.688.522-.612.048-1.156-.31-1.42-.638-1.17-.566-.725-.59-.52-.742-1.02-3.686-1.42-.453.014-1.095Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#fff;stroke-width:.265;stroke:#080000"
+                d="m74.665 20.904.024 37.585.52-.096.26-4.675.093-1.585-.024-28.49-.236-1.346Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="stroke:none;fill:#c20000;fill-opacity:1"
+                d="m83.238 208.305-1.16-1.614M21.86 207.664h13.82v1.649H21.86Zm42.296 0h13.82v1.649h-13.82Zm0 0" />
+            <path style="fill:#000;stroke-width:.264583;stroke:#010000"
+                d="m7.3 67.546-.945.234-1.3.377-1.392.333-1.68.851-1.06.567-.664.968-.4.638-.189 1.393-.072 1.346.356.803.684.522.613.048 1.16-.31 1.416-.638 1.17-.566.728-.59.52-.742 1.016-3.686 1.424-.453-.014-1.095Zm0 0"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:none;stroke-width:.264583"
+                d="m16.368 164.524 2.24 18.256h49.147l2.49-17.658m-39.533 19.106h24.94"
+                transform="matrix(1.14184 0 0 1.13815 .61 -.366)" />
+            <path style="fill:#f9f9f9;stroke-width:.668132;stroke-linecap:round;stroke-linejoin:round;stroke:#050000"
+                d="M116.196 693.593v-2.205h94.04v4.423h-94.04Zm0 0" transform="matrix(.3021 0 0 .30113 .61 -.366)" />
+        </g>
+
+        <g id="car3" transform-origin="50 0" transform="scale(0.97) translate(0 4.5)"
+            style="stroke-linejoin:round;stroke:black">
+            <rect x="15" y="80" width="70" height="40" style="fill:#555; stroke-width:1;"></rect>
+            <rect x="10" y="100" width="80" height="198" rx="5" ry="5" style="stroke-width:0.7; stroke:#000"></rect>
+            <path d="M 10 105 A 5 5 0 0 1 15 100 L 18 100 L 18 298 L 15 298 A 5 5 0 0 1 10 293 Z"
+                style="fill:rgba(0,0,0,0.2); stroke:none"></path>
+            <path d="M 90 105 A 5 5 0 0 0 85 100 L 82 100 L 82 298 L 85 298 A 5 5 0 0 0 90 293 Z"
+                style="fill:rgba(0,0,0,0.2); stroke:none"></path>
+            <path d="M 10 95 L 10 45 L 15 8 Q 15 5 18 4 Q 50 -3 82 4 Q 85 5 85 8 L 90 45 L 90 95 Z" stroke="black"
+                stroke-width="0.7" stroke-linejoin="round"></path>
+            <path d="M 18 40 Q 50 30 82 40 L 79 67 Q 50 60 21 67 Z" stroke="black" stroke-width="1" fill="#585d59"
+                stroke-linejoin="round"></path>
+            <path d="M 12 45 L 12 92 L 15 92 L 15 67 Z" stroke="black" stroke-width="1" fill="#585d59"
+                stroke-linejoin="round"></path>
+            <path d="M 88 45 L 88 92 L 85 92 L 85 67 Z" stroke="black" stroke-width="1" fill="#585d59"
+                stroke-linejoin="round"></path>
+            <path d="M 18 95 L 18 69L 15 40 L 18 9" style="fill:none; stroke-width:0.56; stroke:black"></path>
+            <path d="M 82 95 L 82 69L 85 40 L 82 9" style="fill:none; stroke-width:0.56; stroke:black"></path>
+            <ellipse cx="25" cy="05.8" rx="7" ry="2" fill="#deffff" stroke="grey" stroke-width="0.7"
+                transform="rotate(-12 23 11.5)"></ellipse>
+            <ellipse cx="75.6" cy="11.2" rx="7" ry="2" fill="#deffff" stroke="grey" stroke-width="0.7"
+                transform="rotate(+12 103 11.5)"></ellipse>
+            <path d="M 32 2 Q 50 -1 68 2 L 68 6 Q 50 4 32 6 Z" stroke="black" stroke-width="0" fill="black"
+                stroke-linejoin="round"></path>
+            <path d="M 14.7 10 Q 50 0 85.3 10" style="fill:none; stroke-width:0.7; stroke:black"></path>
+            <path d="M 14 49 L 4 53 A 4 4 0 0 0 1 58.7 L 8 56 L 8 53 L 14 51 Z"
+                style=" fill:black; stroke-width:1; stroke-linecap:round;"></path>
+            <path d="M 86 49 L 96 53 A 4 4 0 0 1 99 58.7 L 92 56 L 92 53 L 86 51 Z"
+                style=" fill:black; stroke-width:1; stroke-linecap:round;"></path>
+            <rect x="18" y="298" width="7" height="1.85" style="fill:red; stroke-width:0.3; stroke:#555; "></rect>
+            <rect x="75" y="298" width="7" height="1.85" style="fill:red; stroke-width:0.3; stroke:#555; "></rect>
+        </g>
+    </defs>
+
+    <rect class="frame" x="-30" y="-30" rx="7" ry="7" width="660" height="660" fill="url(#stone)" />
+    <rect class="frame" x="-30" y="-30" rx="7" ry="7" width="660" height="660" fill="#8888"/>
+    <rect class="background" x="0" y="0" width="100" height="100" fill="url(#stonePattern)" filter="url(#stoneTexture)"/>
+    <g overflow="hidden" transform="scale(0.89352)" width="600" height="600">
+        <rect x="0" y="0" width="560" height="560" fill="url(#stonePattern)" filter="url(#stoneTexture)"></rect>
+        <rect x="0" y="0" width="671.5" height="671.5" fill="url(#p)" transform="scale(1)" />
+    </g>
+    <rect class="ziel" x="600" y="190" width="40" height="120" fill="url(#ziel)" stroke="none" />
+
+    <style>
+        .c0 {
+            animation-name: c0;
+        }
+
+        @keyframes c0 {
+
+            0%,
+            23%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            29.2%,
+            90% {
+                transform: translate(0px, 100px);
+            }
+        }
+
+        .c1 {
+            animation-name: c1;
+        }
+
+        @keyframes c1 {
+
+            0%,
+            29.2%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            35.4%,
+            90% {
+                transform: translate(-100px, 0px);
+            }
+        }
+
+        .c2 {
+            animation-name: c2;
+        }
+
+        @keyframes c2 {
+
+            0%,
+            35.4%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            41.6%,
+            90% {
+                transform: translate(-100px, 0px);
+            }
+        }
+
+        .c3 {
+            animation-name: c3;
+        }
+
+        @keyframes c3 {
+
+            0%,
+            4.4%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            10.6%,
+            90% {
+                transform: translate(-100px, 0px);
+            }
+        }
+
+        .c4 {
+            animation-name: c4;
+        }
+
+        @keyframes c4 {
+
+            0%,
+            10.6%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            16.8%,
+            90% {
+                transform: translate(0px, -100px);
+            }
+        }
+
+        .c5 {
+            animation-name: c5;
+        }
+
+        @keyframes c5 {
+
+            0%,
+            16.8%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            23%,
+            62.71% {
+                transform: translate(100px, 0px);
+            }
+
+            73.5%,
+            90% {
+                transform: translate(700px, 0px);
+            }
+        }
+
+        .c6 {
+            animation-name: c6;
+        }
+
+        @keyframes c6 {
+
+            0%,
+            56.5%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            62.7%,
+            90% {
+                transform: translate(0px, 100px);
+            }
+        }
+
+        .c7 {
+            animation-name: c7;
+        }
+
+        @keyframes c7 {
+
+            0%,
+            41.6%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50.3%,
+            90% {
+                transform: translate(0px, -200px);
+            }
+        }
+
+        .c11 {
+            animation-name: c11;
+        }
+
+        @keyframes c11 {
+
+            0%,
+            50.3%,
+            95%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            56.5%,
+            90% {
+                transform: translate(-100px, 0px);
+            }
+        }
+    </style>
+
+    <g class="a c0">
+        <use href="#car2" fill="#bbeebb" transform="translate(0 0) rotate(0 50 50)" />
+    </g>
+    <g class="a c1">
+        <use href="#car2" fill="#FF9933" transform="translate(200 0) rotate(90 50 50)" />
+    </g>
+    <g class="a c2">
+        <use href="#car2" fill="#87CEFA" transform="translate(400 0) rotate(90 50 50)" />
+    </g>
+    <g class="a c3">
+        <use href="#car3" fill="#ffc107" transform="translate(200 100) rotate(-90 50 50)" />
+    </g>
+    <g class="a c4">
+        <use href="#car2" fill="#FFB6C1" transform="translate(500 100) rotate(0 50 50)" />
+    </g>
+    <g class="a c5">
+        <use href="#car2" fill="red" transform="translate(100 200) rotate(90 50 50)" />
+    </g>
+    <g class="a c6">
+        <use href="#car3" fill="#5488bd" transform="translate(300 200) rotate(0 50 50)" />
+    </g>
+    <g class="a c7">
+        <use href="#car2" fill="#d16bfd" transform="translate(400 200) rotate(0 50 50)" />
+    </g>
+    <g class="a c8">
+        <use href="#car3" fill="#34af95" transform="translate(200 300) rotate(90 50 50)" />
+    </g>
+    <g class="a c9">
+        <use href="#car2" fill="#66d44a" transform="translate(100 400) rotate(90 50 50)" />
+    </g>
+    <g class="a c10">
+        <use href="#car2" fill="#F0E68C" transform="translate(400 400) rotate(-90 50 50)" />
+    </g>
+    <g class="a c11">
+        <use href="#car3" fill="#cd8ee5" transform="translate(100 500) rotate(-90 50 50)" />
+    </g>
+</svg>

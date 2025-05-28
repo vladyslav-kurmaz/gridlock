@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cell-size: 75px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.animate-move {
+  transition: transform 0.5s ease-in-out;
+}
+
+.animate-outside-boundaries {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-out;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 6px;
+  background-color: #e7e7e755;
+  border: 1px solid #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+  background-color: #0f172a;
+}
